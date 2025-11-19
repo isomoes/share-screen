@@ -1,0 +1,17 @@
+{
+  "name": "share-screen",
+  "version": "1.0.0",
+  "description": "Local network screen sharing using WebRTC",
+  "scripts": {
+    "install-all": "cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev"
+  },
+  "keywords": ["webrtc", "screen-share", "local-network"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
